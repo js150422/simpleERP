@@ -1,0 +1,171 @@
+#content{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 10% 75% 15% ;
+    /* position: relative; */
+}
+#title{
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 30px;
+    font-weight:bolder;
+    border-bottom: 1px gray solid;
+
+}
+
+#title > #searchPng{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin-left: 16px;
+}
+
+#searchBox{
+    width: 400px;
+    display: block;
+    grid-template-rows: 3% 20% 59% 15% 3%;
+    justify-items: center;
+    border-left: 1px gray solid;
+    border-right: 1px gray solid;
+    border-top: 8px #6B9080 solid;
+    border-bottom: 8px #6B9080 solid;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* display: none; */
+    background: white;
+}
+
+#searchBlock{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+
+}
+#searchTitleBox{
+    margin-left: 30px;
+}
+.searchTitle{
+    margin:15px 0px;
+}
+
+#sWindow{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 90% 10%;
+    width: 320px;
+    margin-top: 5px;
+}
+
+#sWindowT{
+
+    margin-left: 160px;
+}
+
+#closePng{
+    margin-left: 80px;
+    /* display: grid;
+    justify-items: right; */
+}
+
+#closePng > img{
+    height: 16px;
+    width: 16px;
+}
+
+input,select{
+    width: 150px;
+    height: 20px;
+    margin: 10px 0px 5px 0px;
+    border: 1px gray solid;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+select{
+    width: 163px;
+    height: 24px;
+}
+button{
+    width: 200px;
+    height: 36px;
+    border-radius: 5px;
+    border-style: none;
+    margin-bottom: 10px;
+    color: white;
+    background-color: #6B9080;
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+
+}
+
+#btn{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-auto-flow: row;
+}
+
+#errorAlert{
+
+    color: #C1121F;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#resultTable{
+    display: none;
+    justify-content: center;
+}
+
+table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-collapse: collapse;
+  }
+
+td,th {
+        width: 160px;
+        height: 50px;
+        vertical-align: center;
+        text-align: center;
+        border-bottom: 2px gray solid;
+        white-space:nowrap;
+    }
+    table tr:nth-child(odd){
+        background-color:#eaedf7;
+
+    }
+
+.row:hover{
+    background-color:#FFDDD2;
+}
+.showCondtion{
+    background-color: #E5989B;
+    display: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+#pageBtn{
+    display: grid;
+    justify-items: center;
+    grid-auto-flow: column;
+}
+
+#lastPage{
+    display: none;
+}
+
+#nextPage{
+    display: none;
+}
+

@@ -1,0 +1,86 @@
+
+
+#content{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+}
+
+
+#title{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 30px;
+    font-weight:bolder;
+    border-bottom: 1px gray solid;
+
+}
+#middleBox{
+    display: grid;
+    justify-items: center;
+    grid-auto-rows: auto;
+}
+
+#stockBalanceSearchBox,#stockRecordSearchBox{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 60px;
+
+}
+
+
+table {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    margin-top: 30px;
+    border-collapse: collapse;
+  }
+
+td,th {
+        width: 370px;
+        height: 50px;
+        vertical-align: center;
+        text-align: center;
+        border-bottom: 2px gray solid;
+    }
+    table tr:nth-child(odd){
+        background-color:#eaedf7;
+
+    }
+    .row:hover{
+        background-color:#FFDDD2;
+    }
+
+
+    #pageBtn{
+        display: grid;
+        justify-items: center;
+        grid-auto-flow: column;
+    }
+
+    #lastPage{
+        display: none;
+    }
+
+    #nextPage{
+        display: none;
+    }
+
+    button{
+        width: 200px;
+        height: 36px;
+        border-radius: 5px;
+        border-style: none;
+        margin-bottom: 10px;
+        color: white;
+        background-color: #6B9080;
+        align-items: center;
+        justify-items: center;
+        cursor: pointer;
+
+    }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block link%}
+<link rel='stylesheet' type='text/css' href='/css/purchase/createProduct.css'>
+{% endblock link%}
+<body>
+{% block BODY%}
+<div id = 'content'>
+    <div id = 'title'>產品資料建立</div>
+    <div id = 'middleBox'>
+        <div id = 'boxTop'>
+
+            <label id = 'productPigBlock'>
+                <input type='file' id = 'productPig'>
+                <div id = 'upLoadHint'>點擊上傳圖片</div>
+            </label>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class = 'labels'><div >產品名稱</div></td>
+                        <td class = 'input'><input type = 'text' placeholder='ex: 義美小泡芙 巧克力口味' id = 'productName'></td>
+                    </tr>
+                    <tr>
+                        <td class = 'labels'><div >供應商</div></td>
+                        <td class = 'input'>
+                            <select id = 'supplierName'>
+                                <option value = ''></option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class = 'labels'><div>進貨單價</div></td>
+                        <td class = 'input'><input type = 'text' placeholder='請輸入整數金額' id = 'costPrice'><span>元</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class = 'labels'><div>單位</div></td>
+                        <td class = 'input'><input type = 'text' placeholder='ex: 個、包、箱' id = 'productUnit'></td>
+                    </tr>
+                    <tr>
+                        <td class = 'labels'><div>產品介紹</div></td>
+                        <td class = 'input'><input type = 'text' placeholder='ex: 香脆可口的巧克力小泡芙' id = 'productDescription'></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div id = 'buttonBox'>
+            <div id = 'errorAlertForDB'></div>
+            <div id = 'errorAlertForPig'></div>
+            <button onclick = 'productInfoSend()' id = 'preview'>預覽</button>
+        </div>
+
+    </div>
+</div>
+{% endblock BODY%}
+</body>
+{% block script %}
+<script type='text/javascript' src='/script/purchase/createProduct.js'></script>
+{% endblock  script%}
+</html>

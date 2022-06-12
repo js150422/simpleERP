@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block link%}
+<link rel='stylesheet' type='text/css' href='/css/sale/clientSingle.css'>
+{% endblock link%}
+<body>
+{% block BODY%}
+<div id = 'content'>
+    <div id = 'title'>
+        <span>供應商資料表</span>
+        <span id = 'applicationInfo'></span>
+    </div>
+    <div id = 'middleBox'>
+        <table id = 'resultTable'>
+            <tr>
+                <td><div class = 'labels'>供應商名稱 :</div></td>
+                <td colspan='3'><div id = 'supplierName'></div></td>
+            </tr>
+            <tr>
+                <td><div class = 'labels'>統一編號 :</div></td>
+                <td><div id = 'taxId'></div></td>
+                <td><div>資本額 :</div></td>
+                <td><div id = 'supplierCapital'></div></td>
+            </tr>
+
+            <tr>
+                <td><div class = 'labels'>地址 :</div></td>
+                <td colspan='3'><div id = 'supplierAddress'></div></td>
+            </tr>
+            <tr>
+                <td><div class = 'labels'>聯絡人 :</div></td>
+                <td ><div id = 'contactName'></div></td>
+                <td><div>聯絡人職稱 :</div></td>
+                <td ><div id = 'contactPersonTile'></div></td>
+            </tr>
+            <tr>
+                <td><div class = 'labels'>聯絡人電話 :</div></td>
+                <td><div id = 'contactPhone'></div></td>
+                <td><div >聯絡人郵件 :</div></td>
+                <td ><div id = 'contactEmail'></div></td>
+            </tr>
+            <tr>
+                <td><div class = 'labels'>交易條件 :</div></td>
+                <td><div id = 'paymentTerm'></div></td>
+                <td><div>負責主要窗口 :</div></td>
+                <td colspan='3'><div id = 'repEmployee'></div></td>
+            </tr>
+            <tr>
+                <td><div class = 'labels'>備註 :</div></td>
+                <td colspan='3'><div id = 'supplierNotes'></div></td>
+            </tr>
+            <tr>
+                <td><div class = 'labels'>簽核意見 :</div></td>
+                <td colspan='3' id = 'commentText'></td>
+            </tr>
+            <tr id = 'insertCommentBlock'>
+                <td><div class = 'labels'>新增簽核意見 :</div></td>
+                <td colspan='2'><input type = 'text' id = 'insertCommentText'></td>
+                <td>
+                    <button onclick='insertComment()'>新增意見</button>
+                    <div id = 'insertCommentError'></div>
+                </td>
+            </tr>
+        </table>
+        <div id = 'signBlock'>
+            <div id = 'bossSignBlock'>
+                <div class = 'signHint'>董事長核准</div>
+                <div id = 'bossSignPng'></div>
+                <div id = 'bossTime'></div>
+            </div>
+            <div id = 'managerSignBlock'>
+                <div class = 'signHint'>主管核准</div>
+                <div id = 'managerSignPng'></div>
+                <div id = 'managerTime'></div>
+            </div>
+            <div id = 'applicant'>
+                <div class = 'signHint'>承辦人</div>
+                <div id = 'applicantSignPng'></div>
+                <div id = 'applicantTime'></div>
+            </div>
+        </div>
+        <div id = 'signBtn'>
+            <div id = 'signResult'></div>
+            <button id = 'rejectBtn' onclick='supplierCreateApplicationSign("reject")'>駁回</button>
+            <button id = 'approveBtn' onclick='supplierCreateApplicationSign("approve")'>核准</button>
+        </div>
+    </div>
+</div>
+
+
+{% endblock BODY%}
+</body>
+{% block script %}
+<script type='text/javascript' src='/script/signSystem.js'></script>
+<script type='text/javascript' src='/script/purchase/supplierSingle.js'></script>
+{% endblock  script%}
+</html>

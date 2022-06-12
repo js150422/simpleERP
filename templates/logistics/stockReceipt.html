@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block link%}
+<link rel='stylesheet' type='text/css' href='/css/sale/saleOrderSingle.css'>
+<link rel='stylesheet' type='text/css' href='/css/logistics/stockReceipt.css'>
+{% endblock link%}
+<body>
+{% block BODY%}
+<div id = 'content'>
+    <div id = 'title'>
+        <span>進貨入庫單</span>
+        <span id = 'applicationInfo'></span>
+    </div>
+    <div id = 'middleBox'>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td class = 'labels'><div>供應商名稱</div></td>
+                        <td colspan='2'><div id = 'supplierName'></div></td>
+                        <td><div>統一編號</div></td>
+                        <td ><div id = 'taxId'></div></td>
+                    </tr>
+                    <tr>
+                        <td class = 'labels'><div>訂購日期</div></td>
+                        <td colspan='2'><div id = 'orderDate'></div></td>
+                        <td><div>入庫日期</div></td>
+                        <td ><div id = 'receiptDate'></div></td>
+                    </tr>
+                    <tr>
+                        <td class = 'labels'><div>聯絡人</div></td>
+                        <td colspan='2'><div id = 'contactName'></div></td>
+                        <td><div>負責業務</div></td>
+                        <td ><div id = 'repEmployee'></div></td>
+                    </tr>
+                    <tr>
+                        <td class = 'labels'><div>聯絡人信箱</div></td>
+                        <td colspan='2'><div id = 'contactEmail'></div></td>
+                        <td><div>聯絡人電話</div></td>
+                        <td ><div id = 'contactPhone'></div></td>
+
+                    </tr>
+                    <tr>
+                        <td class = 'labels'><div>聯絡人地址</div></td>
+                        <td colspan='4'><div id = 'supplierAddress'></div></td>
+                    </tr>
+                    <tr id = 'purchaseOrderTitle'>
+                        <td class = 'labels'><div>產品名稱</div></td>
+                        <td class = 'orderDetail'><div>訂購數量</div></td>
+                        <td class = 'orderDetail'><div>差異調整</div></td>
+                        <td class = 'orderDetail'><div>交貨數量</div></td>
+                        <td class = 'reasonBox'><div>差異原因</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class = 'labels'>簽核意見 :</div></td>
+                        <td colspan='4' id = 'commentText'></td>
+                    </tr>
+                    <tr id = 'insertCommentBlock'>
+                        <td><div class = 'labels'>新增簽核意見 :</div></td>
+                        <td colspan='3'><input type = 'text' id = 'insertCommentText'></td>
+                        <td>
+                            <button onclick='insertComment()'>新增意見</button>
+                            <div id = 'insertCommentError'></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id = 'signBlock'>
+                <div id = 'managerSignBlock'>
+                    <div class = 'signHint'>主管確認</div>
+                    <div id = 'managerSignPng'></div>
+                    <div id = 'managerTime'></div>
+                </div>
+                <div id = 'applicant'>
+                    <div class = 'signHint'>入庫</div>
+                    <div id = 'applicantSignPng'></div>
+                    <div id = 'applicantTime'></div>
+                </div>
+            </div>
+            <div id = 'signReceipt'>
+                <div id = 'signReceiptResult'></div>
+                <button id = 'rejectBtn' onclick='receiptSend("reject")'>駁回</button>
+                <button id = 'preview' onclick='receiptSend("approve")'>預覽</button>
+            </div>
+
+    </div>
+</div>
+
+
+{% endblock BODY%}
+</body>
+{% block script %}
+<script type='text/javascript' src='/script/signSystem.js'></script>
+<script type='text/javascript' src='/script/logistics/stockReceipt.js'></script>
+{% endblock  script%}
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block link%}
+<link rel='stylesheet' type='text/css' href='/css/sale/createSpecialPrice.css'>
+{% endblock link%}
+<body>
+{% block BODY%}
+
+
+
+<div id = 'content'>
+    <div id = 'title'>優惠售價設定</div>
+    <div id = 'middleBox'>
+        <div id = 'warningBox'>
+            <div class = 'warning'>優惠售價設定皆須簽至董事長</div>
+        </div>
+        <div id = 'searchBlock'>
+            <div>搜尋廠商名稱 :
+                <input type='text' id = 'searchClient'>
+                <button onclick = 'searchClientInput()'>查詢</button>
+                <select id = 'searchClientResult'>
+                    <option value=''></option>
+                </select>
+
+            </div>
+            <div>搜尋產品名稱 :
+                <input type='text' id = 'searchProduct'>
+                <button onclick = 'searchProductInput()' >查詢</button>
+                <select id = 'searchProductResult'>
+                    <option value=''></option>
+                </select>
+
+            </div>
+            <div id = 'errorAlert'></div>
+        </div>
+        <div id = 'showBlock'>
+        </div>
+        <div id = 'priceBlock'>
+            <label>目前單價 <input type = 'text' id = 'salePrice'></label><br>
+            <label>優惠價格 <input type = 'text' id = 'specialPrice' placeholder = '請填入整數金額'></label><br>
+        </div>
+        <div id = 'inputBlock'>
+            <div>申請原因</div><br>
+            <input type = 'text' id = 'specialDescription' >
+            <button onclick = 'getSpecialPriceData()' id = 'preview'>送出</button>
+            <div id = 'createResult'></div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+{% endblock BODY%}
+</body>
+{% block script %}
+<script type='text/javascript' src='/script/sale/createSpecialPrice.js'></script>
+{% endblock  script%}
+</html>

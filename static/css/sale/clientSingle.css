@@ -1,0 +1,139 @@
+#content{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 10% 90% ;
+}
+
+
+#title{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 30px;
+    font-weight:bolder;
+    border-bottom: 1px gray solid;
+
+}
+#middleBox{
+    display: none;
+    width: 100%;
+
+}
+
+
+table {
+    width: 90%;
+    margin: 30px 0px 30px 60px ;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+
+
+td,th {
+        height: 35px;
+        vertical-align: center;
+        border-bottom: 2px gray solid;
+
+    }
+
+    table tr:nth-child(odd){
+        background-color:#eaedf7;
+
+    }
+
+
+#applicationInfo{
+    width: 100%;
+    display: inline-flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+#applicationStatus,#applicationId{
+    background-color: #E5989B;
+    border-radius: 10px;
+    padding: 5px 10px;
+    justify-items: right;
+    margin: 0px 10px;
+}
+ .labels{
+     padding-left: 30px;
+
+ }
+
+ #comment{
+    padding-left: 30px;
+    margin-left: 60px;
+    border-bottom: 2px gray solid;
+ }
+
+ input{
+    width:90%;
+    height: 60px;
+    margin: 20px 30px 20px 0px;
+    padding: 10px;
+ }
+
+ button{
+    width: 200px;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 5px;
+    border-style: none;
+    margin: 16px 0px 20px 0px;
+    color: white;
+    background-color: #6B9080;
+    align-items: center;
+    cursor: pointer;
+}
+#signBlock{
+    display: grid;
+    grid-auto-flow: column;
+    margin-left: 120px;
+    margin-right: 120px;
+
+}
+
+#bossSignPng,#managerSignPng,#applicantSignPng{
+    height: 150px;
+
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    text-align: center;
+
+}
+
+#bossTime,#managerTime,#applicantTime,.signHint{
+    display: flex;
+    justify-content: center;
+}
+
+
+#insertCommentError{
+    color: #C1121F;
+}
+
+
+#signBtn{
+/* display: flex; */
+display: none;
+justify-content: right;
+margin-right: 100px;
+}
+
+#rejectBtn{
+margin-right: 16px;
+}
+
+#signResult{
+    font-size: 18px;
+    margin: 20px 36px 0px 0px;
+    color: #C1121F;
+}

@@ -1,0 +1,19 @@
+
+
+td,th {
+        width: 400px;
+
+}
+#pageBtn{
+        display: grid;
+        justify-items: center;
+        grid-auto-flow: column;
+    }
+
+#lastPage{
+        display: none;
+    }
+
+    #nextPage{
+        display: none;
+    }

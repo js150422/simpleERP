@@ -1,0 +1,65 @@
+#content{
+display: grid;
+grid-template-rows: 50% 50%;
+justify-items: center;
+height: 100%;
+width: 100%;
+}
+#middleBox{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+}
+
+
+
+
+.title{
+    display: grid;
+    justify-items: center;
+    font-weight: bolder;
+    font-size: 26px;
+    padding: 20px 0px;
+}
+input{
+   width: 200px;
+   height: 20px;
+   border-radius: 5px;
+   padding: 5px 0px 5px 5px;
+}
+select{
+    display: inline;
+    width: 200px;
+    height: 36px;
+    border-radius: 5px;
+    padding: 5px 0px 5px 5px;
+    font-size: 18px;
+ }
+
+button{
+    width: 200px;
+    height: 36px;
+    border-radius: 5px;
+    border-style: none;
+    margin: 16px 0px 20px 0px;
+    color: white;
+    background-color: #6B9080;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+#levelChangeAlert{
+    color: #C1121F;
+}
+
+#announcementText{
+    width: 300px;
+    height: 50px;
+}
+
+
+#departmentSetError{
+    color: #C1121F;
+}

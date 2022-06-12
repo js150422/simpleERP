@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel = stylesheet type = text/css href = '/css/base.css' ></style>
+    {% block link %}{% endblock link %}
+    <title>simple ERP</title>
+</head>
+<body>
+    {% block HEADER %}
+    <header>
+
+        <a id = 'slogo' href='/main' ></a>
+        <div id = 'headerMenu'>
+            <div id = 'welcome'></div>
+            <a id = 'alert' href='/applicationList'></a>
+            <span id = 'applcationNumber'></span>
+            <a id = 'user' href='/user'></a>
+            <div id = 'logout' onclick = 'logout()'></div>
+
+        </div>
+    </header>
+    {% endblock HEADER %}
+    {% block MENU %}
+    <main>
+        <div id = menu>
+            <div class = 'subTitle' onclick='toggleMenu(0)'>銷貨 + </div>
+            <div class = 'subMenu'>
+                <div class = 'smallTitle' onclick = 'pageSale("createClient")'>廠商資料建立</div>
+                <div class = 'smallTitle' onclick = 'pageSale("createSaleOrder")'>銷售訂單建立</div>
+                <div class = 'smallTitle' onclick = 'pageSale("createSpecialPrice")'>優惠售價設定</div>
+
+            </div>
+            <div class = 'subTitle' onclick='toggleMenu(1)'>進貨 + </div>
+            <div class = 'subMenu'>
+                <div class = 'smallTitle' onclick = 'pagePurchase("createSupplier")'>供應商資料建立</div>
+                <div class = 'smallTitle' onclick = 'pagePurchase("createPurchaseOrder")'>採購單建立</div>
+                <div class = 'smallTitle' onclick = 'pagePurchase("createProduct")'>產品資料建立</div>
+            </div>
+            <div class = 'subTitle' onclick='toggleMenu(2)'>申請單查詢 +</div>
+            <div class = 'subMenu'>
+                <div class = 'smallTitle' onclick = 'application("searchClient")'>廠商資料查詢</div>
+                <div class = 'smallTitle' onclick = 'application("searchSupplier")'>供應商資料查詢</div>
+                <div class = 'smallTitle' onclick = 'application("searchProduct")'>產品資料查詢</div>
+                <div class = 'smallTitle' onclick = 'application("searchSaleOrder")'>銷售訂單查詢</div>
+                <div class = 'smallTitle' onclick = 'application("searchPurchaseOrder")'>採購單查詢</div>
+                <div class = 'smallTitle' onclick = 'application("searchSpecialPrice")'>優惠售價查詢</div>
+                <div class = 'smallTitle' onclick = 'application("searchDeliveryBill")'>出貨單查詢</div>
+                <div class = 'smallTitle' onclick = 'application("searchStockReceipt")'>入庫單查詢</div>
+                <div class = 'smallTitle' onclick = 'application("searchStockBalance")'>庫存餘額查詢</div>
+                <div class = 'smallTitle' onclick = 'application("searchStockChange")'>庫存明細查詢</div>
+            </div>
+            <div class = 'subTitle' onclick='toggleMenu(3)'>報表查詢 +</div>
+            <div class = 'subMenu'>
+                <div class = 'smallTitle' onclick = 'pageReport("saleOrderReport")'>銷售訂單報表</div>
+            </div>
+            <div class = 'subTitle' onclick='toggleMenu(4)'>設置 +</div>
+            <div class = 'subMenu'>
+                <div class = 'smallTitle' onclick = 'pageAdmin("newStaff")'>權限修改</div>
+            </div>
+            <div id ='authorizeError'></div>
+            <div id = 'menuBtn' onclick='moveMenu()'>></div>
+        </div>
+        {% endblock MENU %}
+        {% block BODY %}
+
+        {% endblock BODY%}
+    </main>
+
+    <script type='text/javascript' src='/script/base.js'></script>
+    {% block script %}{% endblock  script%}
+</body>
+</html>

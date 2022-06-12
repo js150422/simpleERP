@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block link%}
+<link rel='stylesheet' type='text/css' href='/css/user.css'>
+{% endblock link%}
+<body>
+{% block BODY%}
+<div id = 'content'>
+
+    <div id = 'middleBox'>
+
+        <label id = 'employeePig'>
+            <input type = 'file' accept = '.jpg, .png, .gif' id = 'headPig'>
+            <div class = 'upLoadHint'>點擊上傳圖片</div>
+        </label>
+
+        <label id = 'signPigBox'>
+            <div id = 'signPigPreview'></div>
+            <div class = 'upLoadHint'>上傳印鑑</div>
+            <input type = 'file' accept = '.jpg, .png, .gif' id = 'signPig'>
+        </label>
+
+
+
+        <div id = 'subTitleBox'>
+            <div class = 'innerBoxTitle'>姓名 :<span class = 'userInfo'></span></div>
+            <div class = 'innerBoxTitle'>帳號 :<span class = 'userInfo'></span></div>
+            <div class = 'innerBoxTitle'>部門 :<span class = 'userInfo'></span></div>
+            <div class = 'innerBoxTitle'>職等 :<span class = 'userInfo'></span></div>
+            <div class = 'innerBoxTitle'>信箱 :<span class = 'userInfo'></span></div>
+
+        </div>
+        <button onclick='send()'>送出</button>
+        <button onclick='myApplication()'>我的申請單</button>
+        <div id = 'errorAlert'></div>
+    </div>
+</div>
+
+
+{% endblock BODY%}
+</body>
+{% block script %}
+<script type='text/javascript' src='/script/user.js'></script>
+{% endblock  script%}
+</html>

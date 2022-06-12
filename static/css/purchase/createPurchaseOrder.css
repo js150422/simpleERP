@@ -1,0 +1,16 @@
+#content{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 10% 90% ;
+    /* position: relative; */
+}
+#title{
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 18px;
+    font-weight:bolder;
+    border-bottom: 1px gray solid;
+
+}

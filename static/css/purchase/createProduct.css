@@ -1,0 +1,112 @@
+#content{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 10% 90% ;
+}
+
+
+#title{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 30px;
+    font-weight:bolder;
+    border-bottom: 1px gray solid;
+
+}
+#middleBox{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#boxTop{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 30% 70%;
+}
+
+table{
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    margin-left: 30px;
+
+}
+#productPigBlock{
+    margin-top: 50px;
+    width: 360px;
+    height: 320px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+    position: relative;
+    border-radius: 5%;
+    border: 2px #364958 dashed;
+
+
+}
+
+
+/*
+
+table tr:nth-child(odd){
+    background-color:#eaedf7;
+
+} */
+
+table tr,td{
+    padding: 20px;
+}
+
+input,select{
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 60px;
+    margin-left: 30px;
+    width: 80%;
+}
+
+
+#productPigBlock > input{
+    display: none;
+}
+#productPigBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.labels{
+    margin-left: 60px;
+    width: 10%;
+}
+#buttonBox{
+    display: flex;
+    justify-content: right;
+    margin-right: 150px;
+
+}
+
+#errorAlertForDB,#errorAlertForPig{
+    color: #C1121F;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+button{
+    width: 200px;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 5px;
+    border-style: none;
+    margin: 16px 0px 20px 0px;
+    color: white;
+    background-color: #6B9080;
+    align-items: center;
+    cursor: pointer;
+}

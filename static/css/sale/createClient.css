@@ -1,0 +1,79 @@
+#content{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 10% 90% ;
+}
+#title{
+    display: grid;
+    margin-left: 60px;
+    align-items: center;
+    font-size: 30px;
+    font-weight:bolder;
+}
+#warningBox{
+    margin-left: 60px;
+}
+.warning{
+    margin-bottom: 16px;
+}
+
+table{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+table tr:nth-child(odd){
+    background-color:#eaedf7;
+
+}
+
+table tr,td{
+    padding: 10px;
+}
+
+input{
+    font-size: 18px;
+    width: 360px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 60px;
+    margin-left: 30px;
+}
+select{
+    font-size: 18px;
+    width: 376px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 60px;
+    margin-left: 30px;
+}
+.labels{
+    margin-left: 60px;
+}
+#coNote{
+    width: 300px;
+    height: 100px;
+}
+#buttonBox{
+    display: grid;
+    justify-items: center;
+
+}
+button{
+    width: 200px;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 5px;
+    border-style: none;
+    margin: 16px 0px 20px 0px;
+    color: white;
+    background-color: #6B9080;
+    align-items: center;
+    cursor: pointer;
+}
+#createResult{
+    color: #C1121F;
+
+}

@@ -1,0 +1,60 @@
+input{
+    height: 16px;
+    width: 100px;
+    border-radius: 5px;
+    margin: 5px 30px 0px 0px;
+}
+.reasonBox{
+width: 300px;
+margin: 0px auto ;
+
+}
+.reason{
+
+    width: 300px;
+
+}
+
+#signDelivery{
+    display: flex;
+    justify-content: right;
+    margin-right: 100px;
+    }
+
+    #preview{
+        display: none;
+    }
+    #rejectBtn{
+        display: none;
+    }
+
+
+#signDeliveryResult{
+    font-size: 18px;
+    margin: 20px 36px 0px 0px;
+    color: #C1121F;
+}
+
+.productName{
+    padding-left: 30px;
+    /* width: 25%; */
+
+}
+
+
+#clientSignPng{
+    height: 150px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    text-align: center;
+
+}
+
+#clientTime{
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    width: 80%;
+}

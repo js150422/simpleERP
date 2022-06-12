@@ -1,0 +1,183 @@
+html{
+    position:relative;
+    height: 100%;
+    color: #253237;
+    font-family: Noto Sans TC;
+}
+body{
+    height: 100%;
+    font-family: monospace;
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+}
+header{
+    height: 70px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    background-color: #C2DFE3;
+
+}
+
+#slogo{
+
+    background-image: url('/image/erp.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60px;
+    margin-left: 20px;
+}
+#headerMenu{
+    display: flex;
+    justify-content: right;
+    margin-right: 32px;
+
+
+}
+#user, #logout,#alert{
+    margin-left: 10px;
+}
+#alert{
+
+    background-image: url('/image/important.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#applcationNumber{
+    position: relative;
+    right: 8px;
+    height:16px;
+    width:18px;
+    font-size:10px;
+    font-weight:600;
+    background:#C1121F;
+    color:white;
+    border-radius:20px;
+    text-align:center;
+    display: none;
+}
+
+
+
+#user{
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+#logout{
+    background-image: url('/image/out.png');
+    cursor: pointer;
+}
+
+#alert,#user,#logout{
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+}
+
+main{
+    height: 100%;
+    display: flex;
+}
+#menu{
+    width: 0px;
+    background-color:rgba(0, 0, 0, 0.55);
+
+    height: 100%;
+    position: relative;
+    border-right: 3px solid #d1d1d1;
+    box-shadow: 5px 0 5px rgba(23, 23, 54, 0.6);
+    transition: 0.5s;
+
+
+}
+
+
+.subTitle{
+    margin-top: 15px;
+    right: 200px;
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 5px 0px 5px 32px;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    color: #CAF0F8;
+    position: relative;
+    transition-duration:0.5s;
+
+}
+.smallTitle{
+
+    right: 200px;
+    padding: 5px 0px 5px 32px;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    color: white;
+    transition-duration:0.5s;
+}
+.smallTitle:hover{
+	background-color: #C2DFE3;
+    color: #253237;
+
+}
+
+#content{
+    border-radius: 5px;
+    /* background-color: #F5F3F4; */
+}
+
+#authorizeError{
+    color: #F6F655;
+    margin-left: 32px;
+
+}
+
+footer {
+    background-color: #757575;
+    height: 54px;
+}
+
+
+#brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+}
+
+
+#menuBtn{
+    width: 20px;
+    height: 80px;
+    background-color: #d1d1d1;
+    color: #686666;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 5px 0 5px rgba(23, 23, 54, 0.6);
+}
+
+.subMenu{
+    display: none;
+}
+
+
+.show{
+    display: block;
+}
+
+
+#insertCommentBlock{
+    display:none
+}

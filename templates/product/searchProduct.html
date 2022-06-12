@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block link%}
+<link rel='stylesheet' type='text/css' href='/css/sale/searchClient.css'>
+<link rel='stylesheet' type='text/css' href='/css/product/searchProduct.css'>
+{% endblock link%}
+<body>
+{% block BODY%}
+<div id = 'content'>
+    <div id = 'title'>產品查詢
+        <img src = '/image/search.png' id = 'searchPng' onclick = 'openSW()'>
+        <span class = 'showCondtion'></span>
+        <span class = 'showCondtion'></span>
+        <span class = 'showCondtion'></span>
+        <span class = 'showCondtion'></span>
+        <span class = 'showCondtion'></span>
+        <span class = 'showCondtion'></span>
+    </div>
+    <table id = 'resultTable'>
+        <tbody>
+            <tr>
+                <th>序號</th>
+                <th>申請單號</th>
+                <th>產品名稱</th>
+                <th>供應商</th>
+                <th>進貨價格</th>
+                <th>建議售價</th>
+                <th>單位</th>
+                <th>敘述</th>
+            </tr>
+        </tbody>
+
+    </table>
+    <div id = 'pageBtn'>
+        <button id = 'lastPage' onclick = 'lastPage()'>上一頁</button>
+        <button id = 'nextPage' onclick = 'nextPage()'>下一頁</button>
+    </div>
+</div>
+<div id = 'searchBox'>
+    <div id = 'colorline-top'></div>
+    <div id = 'sWindow'>
+        <div id = 'sWindowT'>查詢條件</div>
+        <div id = 'closePng'><img src = '/image/close.png' onclick = 'closeSW()'></div>
+    </div>
+    <div id = 'searchBlock'>
+        <div id = 'searchTitleBox'>
+            <div class = 'searchTitle'>產品名稱 :</div>
+            <div class = 'searchTitle'>產品敘述 :</div>
+            <div class = 'searchTitle'>供應商 :</div>
+            <div class = 'searchTitle'>售價 : 起始</div>
+            <div class = 'searchTitle'>售價 : 結束</div>
+
+        </div>
+        <div id = 'inputs'>
+            <input type = 'text' id = 'productName'><br/>
+            <input type = 'text' id = 'productDescription'><br/>
+            <input type = 'text' id = 'supplierName'><br/>
+            <input type = 'text' id = 'priceStart'><br/>
+            <input type = 'text' id = 'priceEnd'><br/>
+        </div>
+    </div>
+    <div id = 'btn'><button onclick = 'getCondition()'>查詢</button></div>
+
+    <div id = 'colorline-bottom'></div>
+</div>
+
+
+{% endblock BODY%}
+</body>
+{% block script %}
+<script type='text/javascript' src='/script/product/searchProduct.js'></script>
+{% endblock  script%}
+</html>

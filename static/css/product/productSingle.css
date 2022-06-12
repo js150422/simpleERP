@@ -1,0 +1,204 @@
+
+
+#content{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 10% 90% ;
+}
+
+
+#title{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 30px;
+    font-weight:bolder;
+    border-bottom: 1px gray solid;
+
+}
+#middleBox{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-rows: 50% 10% 30% 10%;
+
+}
+#boxTop{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 30% 70%;
+}
+
+table{
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    margin-left: 30px;
+
+}
+#productPigBlock{
+    margin-top: 50px;
+    width: 360px;
+    height: 320px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+    position: relative;
+    border-radius: 5%;
+    border: 2px #364958 dashed;
+}
+
+
+/*
+
+table tr:nth-child(odd){
+    background-color:#eaedf7;
+
+} */
+
+table tr,td{
+    padding: 20px;
+}
+
+
+table tr:nth-child(odd){
+    background-color:#eaedf7;
+
+}
+
+.input > input{
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 60px;
+    margin-left: 30px;
+    width: 80%;
+    border-style:none;
+    background-color: rgba(0,0,0,0);
+}
+
+#productPigBlock > input{
+    display: none;
+}
+
+
+#productPigBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.labels{
+    margin-left: 60px;
+    width: 20%;
+}
+
+
+#buttonBox{
+    display: flex;
+    justify-content: right;
+    margin-right: 150px;
+
+}
+
+#errorAlert{
+    color: #C1121F;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+button{
+    width: 200px;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 5px;
+    border-style: none;
+    margin: 16px 0px 20px 0px;
+    color: white;
+    background-color: #6B9080;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+#signBlock{
+
+    display: grid;
+    grid-auto-flow: column;
+
+    margin: 75px 120px ;
+
+}
+
+#bossSignPng,#managerSignPng,#applicantSignPng{
+    height: 150px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    text-align: center;
+
+}
+
+#bossTime,#managerTime,#applicantTime,.signHint{
+    display: flex;
+    justify-content: center;
+}
+
+
+#insertCommentError{
+    color: #C1121F;
+}
+#commentTitleTd{
+    width: 15%;
+}
+
+#insertCommentTextTd{
+    width: 70%;
+}
+#commentTitle{
+    margin-left: 30px;
+}
+
+
+#insertCommentText{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#signBtn{
+    /* display: flex; */
+    display: none;
+    justify-content: right;
+    margin-right: 100px;
+    }
+
+    #rejectBtn{
+    margin-right: 16px;
+    }
+
+    #signResult{
+        font-size: 18px;
+        margin: 20px 36px 0px 0px;
+        color: #C1121F;
+    }
+
+    #applicationInfo{
+        width: 100%;
+        display: inline-flex;
+        justify-content: right;
+        align-items: center;
+        font-size: 20px;
+    }
+    #applicationStatus,#applicationId{
+        background-color: #E5989B;
+        border-radius: 10px;
+        padding: 5px 10px;
+        justify-items: right;
+        margin: 0px 10px;
+    }

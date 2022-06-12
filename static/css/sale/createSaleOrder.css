@@ -1,0 +1,92 @@
+#content{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 10% 90% ;
+}
+
+
+#title{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 30px;
+    font-weight:bolder;
+    border-bottom: 1px gray solid;
+
+}
+#middleBox{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table{
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+
+}
+
+.labels{
+    padding-left: 30px;
+    /* width: 25%; */
+}
+.productName{
+    margin-left: 16px;
+}
+
+
+table tr:nth-child(odd){
+    background-color:#eaedf7;
+
+}
+
+table tr,td{
+    padding: 15px;
+}
+
+#buttonBox{
+    display: flex;
+    justify-content: right;
+
+}
+
+
+button{
+    width: 200px;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 5px;
+    border-style: none;
+    margin: 16px 0px 20px 0px;
+    color: white;
+    background-color: #6B9080;
+    align-items: center;
+    cursor: pointer;
+}
+
+.class{
+    display: flex;
+}
+#errorAlert{
+    color: #C1121F;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+
+input{
+    font-size: 18px;
+    width: 270px;
+    padding: 5px;
+    border-radius: 5px;
+}
+select{
+    font-size: 18px;
+    width: 286px;
+    padding: 5px;
+    border-radius: 5px;
+
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block link%}
+<link rel='stylesheet' type='text/css' href='/css/sale/searchSaleOrder.css'>
+<link rel='stylesheet' type='text/css' href='/css/sale/searchSpecialPrice.css'>
+{% endblock link%}
+<body>
+{% block BODY%}
+<div id = 'content'>
+    <div id = 'title'>優惠售價查詢
+        <img src = '/image/search.png' id = 'searchPng' onclick = 'openSW()'>
+        <span class = 'showCondtion'></span>
+        <span class = 'showCondtion'></span>
+        <span class = 'showCondtion'></span>
+        <span class = 'showCondtion'></span>
+        <span class = 'showCondtion'></span>
+        <span class = 'showCondtion'></span>
+    </div>
+    <table id = 'resultTable'>
+        <tbody>
+            <tr>
+                <th>序號</th>
+                <th>申請單號</th>
+                <th>申請單狀態</th>
+                <th>申請日期</th>
+                <th>客戶名稱</th>
+                <th>產品名稱</th>
+                <th>建議售價</th>
+                <th>優惠售價</th>
+            </tr>
+        </tbody>
+
+    </table>
+    <div id = 'pageBtn'>
+        <button id = 'lastPage' onclick = 'lastPage()'>上一頁</button>
+        <button id = 'nextPage' onclick = 'nextPage()'>下一頁</button>
+    </div>
+</div>
+<div id = 'searchBox'>
+    <div id = 'colorline-top'></div>
+    <div id = 'sWindow'>
+        <div id = 'sWindowT'>查詢條件</div>
+        <div id = 'closePng'><img src = '/image/close.png' onclick = 'closeSW()'></div>
+    </div>
+    <div id = 'searchBlock'>
+        <div id = 'searchTitleBox'>
+            <div class = 'searchTitle'>簽核狀態 :</div>
+            <div class = 'searchTitle'>申請單號 :</div>
+            <div class = 'searchTitle'>統一編號 :</div>
+            <div class = 'searchTitle'>廠商名稱 :</div>
+            <div class = 'searchTitle'>產品名稱 :</div>
+        </div>
+        <div id = 'inputs'>
+            <select id = 'status'>
+                <option value=''></option>
+                <option>全部</option>
+                <option>申請中</option>
+                <option>審核完成</option>
+            </select>
+            <input type = 'text' id = 'applicationId'><br/>
+            <input type = 'text' id = 'taxId'><br/>
+            <input type = 'text' id = 'clientName'><br/>
+            <input type = 'text' id = 'productName'><br/>
+        </div>
+    </div>
+    <div id = 'btn'><button onclick = 'getCondition()'>查詢</button></div>
+
+    <div id = 'colorline-bottom'></div>
+</div>
+
+
+
+{% endblock BODY%}
+</body>
+{% block script %}
+<script type='text/javascript' src='/script/sale/searchSpecialPrice.js'></script>
+{% endblock  script%}
+</html>

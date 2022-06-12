@@ -1,0 +1,92 @@
+
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-family: monospace;
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+}
+main,nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+nav{
+    background-color: #cce3de;
+}
+#mainBox{
+    display:grid;
+    justify-items: center;
+}
+
+#mainBox,#navBox{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+main > #mainBox > #title{
+    min-width: 600px;
+    min-height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-image: url('/image/erp.png');
+
+}
+
+#introduce{
+    margin-bottom: 20px;
+}
+
+#signupBlock{
+    display: none;
+}
+
+.subTitle{
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+input {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: none;
+    margin: 16px 0px;
+    font-size: 18px;
+    padding: 10px 16px;
+    background-color: white;
+}
+button{
+    width: 200px;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 5px;
+    border-style: none;
+    margin: 16px 0px 20px 0px;
+    color: white;
+    background-color: #6B9080;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+#hint{
+
+    color: #C1121F;
+    margin: 20px 0px;
+}
+
+
+@media (max-width : 1200px){
+    body{
+        grid-template-columns: 100%;
+    }
+}

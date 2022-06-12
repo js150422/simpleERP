@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block link%}
+<link rel='stylesheet' type='text/css' href='/css/sale/saleOrderReport.css'>
+{% endblock link%}
+<body>
+{% block BODY%}
+<div id = 'content'>
+    <div id = 'title'>銷售訂單報表</div>
+    <div id = 'middleBox'>
+        <div id = 'middleBoxTop'>
+            <span id = 'charNameBox'>
+                <label>圖表名稱</label>
+                <select id = 'charName'>
+                    <option value=''></option>
+                    <option value='1'>產品貢獻度</option>
+                    <option value='2'>客戶貢獻度</option>
+                    <option value='3'>業務貢獻度</option>
+                    <option value='4'>產品趨勢圖</option>
+                    <option value='5'>客戶趨勢圖</option>
+                    <option value='6'>業務趨勢圖</option>
+                </select>
+            </span>
+            <span id = 'TimeBox'>
+                <label>訂單日期 起始</label>
+                <input type = 'date' id = 'start'>
+                <label>訂單日期 結束</label>
+                <input type = 'date' id = 'end'>
+            </span>
+            <button onclick='searchReport()'>查詢</button>
+            <span id = 'errorAlert'></span>
+        </div>
+        <div id = 'middleBoxMiddle'>
+
+            <table id = 'doughnut'>
+                <tbody id = 'doughnutTbody'>
+                    <tr>
+                        <th id = 'subject'></th>
+                        <th id = 'amount'>金額</th>
+                        <th id = 'percentage'>百分比</th>
+                    </tr>
+
+                </tbody>
+            </table>
+            <table id = 'lineChart'>
+                <tbody id = 'lineChartTbody'>
+                    <tr>
+                        <th id = 'subjectItem'>名稱/日期</th>
+                        <th id = 'time0'></th>
+                        <th id = 'time1'></th>
+                        <th id = 'time2'></th>
+                        <th id = 'time3'></th>
+                        <th id = 'time4'></th>
+                        <th>總金額</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock BODY%}
+</body>
+{% block script %}
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js'></script>
+<script type='text/javascript' src='/script/sale/saleOrderReport.js'></script>
+<script type='text/javascript' src='/script/report/doughnut.js'></script>
+<script type='text/javascript' src='/script/report/lineChar.js'></script>
+{% endblock  script%}
+</html>

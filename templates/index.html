@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+    <meta charset = 'UTF-8'>
+    <meta http-equiv = 'X-UA-Compatible' content = 'IE=edge'>
+    <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'>
+    <link rel = stylesheet type = text/css href = '/css/index.css' ></style>
+    <title>simple ERP</title>
+</head>
+<body>
+    <main>
+        <div id = 'mainBox'>
+            <div id = 'title'></div>
+            <div id = 'introduce'>make easier to manage</div>
+        </div>
+    </main>
+    <nav>
+        <div id = 'navBox'>
+            <div id = 'signinBlock'>
+                <div class = 'subTitle'>sign in</div>
+                <label>帳號 : </label>
+                <input type = 'text' id = 'signinUser'><br/>
+                <label>密碼 : </label>
+                <input type = 'password' id = 'signinPassword'><br/>
+                <button id = 'btn' onclick='getData("signin")'>Log in</button>
+                <div onclick='navChange()'>新夥伴還沒有帳號嗎? 點此註冊</div>
+            </div>
+            <div id = 'signupBlock'>
+                <div class = 'subTitle'>sign up</div>
+                <label>姓名 : </label>
+                <input type = 'text' id = 'signupName'><br/>
+                <label>信箱 : </label>
+                <input type = 'text' id = 'signupEmail'><br/>
+                <label>帳號 : </label>
+                <input type = 'text' id = 'signupUser'><br/>
+                <label>密碼 : </label>
+                <input type = 'password' id = 'signupPassword'><br/>
+                <button id = 'btn' onclick='getData("signup")'>Sign up</button>
+                <div onclick='navChange()' >歡迎回來，點此登入</div>
+            </div>
+            <div id = 'hint'></div>
+        </div>
+
+    </nav>
+    <script type = 'text/javascript' src = '/script/index.js'></script>
+</body>
+</html>
