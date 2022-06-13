@@ -194,6 +194,7 @@ def signApplication():
                 newStation = newStationCheck(auditAction,station,applicationType,managerName,applicatePerson,paymentTerm)
                 if auditAction == 'reject':
                     application_Model.rejectApplicationDB(newStation,applicationId)
+                    return jsonify({'ok':True,'message':'簽核完成'})
         # -----------------------------------核准(待補saleOrder金額判斷)---------------------------------------------------
                 else:
                     application_Model.signApplicationDB(grad,newStation,name, approveTime,applicationId,managerName,applicatePerson)

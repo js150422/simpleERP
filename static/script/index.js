@@ -6,6 +6,7 @@ window.addEventListener('load', function(){
 	if (document.cookie.length!=0){
 		hasCookie()
 	}
+    testUser()
 });
 
 async function hasCookie() {
@@ -118,3 +119,7 @@ function inputClean(){
     signupPassword.value = '';
 }
 
+function testUser(){
+    document.getElementById('signinUser').value = 'cccc'
+    document.getElementById('signinPassword').value = '123456'
+}
