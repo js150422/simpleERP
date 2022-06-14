@@ -17,7 +17,7 @@
 }
 #middleBox{
     display: grid;
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 20% 80%;
     justify-items: center;
 }
 
@@ -27,7 +27,7 @@
 
 #middleBoxMiddle{
     display: grid;
-    grid-template-rows: 40% 60%;
+    grid-template-rows: 50% 50%;
     justify-items: center;
     align-items: center;
 }
@@ -40,7 +40,7 @@
 
 } */
 #myChart{
-    max-width: 700px;
+    max-width: 500px;
     margin: 20px 0px;
 }
 
@@ -84,7 +84,7 @@ button{
 
 
 table{
-    max-height: 250px;
+    max-height: 150px;
     margin-left: auto;
     margin-right: auto;
     border-collapse: collapse;
@@ -99,7 +99,7 @@ table tr:nth-child(odd){
 }
 
 table tr,td{
-    width: 200px;
+    width: 100px;
     padding: 10px;
 
 }

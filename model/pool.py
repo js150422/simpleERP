@@ -16,6 +16,15 @@ dbconfig={
 'database':'simpleerp',
 }
 
+# dbconfig={
+# 'host':'localhost',
+# 'user':'test',
+# 'password':password,
+# 'database':'simpleERP',
+# }
+
+
+
 
 pool=pooling.MySQLConnectionPool(
     pool_name='mypool',
