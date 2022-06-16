@@ -22,9 +22,7 @@ simpleERP is project refer to ERP and merchandising-sector companies.
 ## Demo
 
 Demo Link： [https://simple-erp.website](https://simple-erp.website)
-test account：
-
-* recommend Use
+* test account：(recommend Use)
 
     * can try sign document
     * search history document
