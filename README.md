@@ -47,7 +47,7 @@ Demo Link： [https://simple-erp.website](https://simple-erp.website)
 | staff    | logistics | nnnn   | 123456 |
 | manager  | logistics | callme | 123456 |
 | driver   | logistics | rrrr   | 123456 |
-| Boss     |   admin   | cccc   | 123456 |
+
 
 
 ## Based on
