@@ -81,8 +81,7 @@ Demo Link： [https://simple-erp.website](https://simple-erp.website)
 
 ### sign up
 
-* sign up : success sign up and .
-* user need made remind system administrator to change grade and department.
+* sign up : when user success sign up, he need made remind system administrator to change grade and department.
 
 ![](https://i.imgur.com/RsHcXn9.png)
 
