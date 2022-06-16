@@ -81,15 +81,16 @@ Demo Link： [https://simple-erp.website](https://simple-erp.website)
 
 ### sign up
 
-* sign up : when user success sign up, he need made remind system administrator to change grade and department.
+* sign up : when user success sign up, he need made remind system administrator to change grade and department to use more function on simpleERP.
 
 ![](https://i.imgur.com/RsHcXn9.png)
 
 
-### set department and grad 
+### set department and grad Page
 
 * only system administrator can use this page.
-* change user department adn grad.
+* change user department and grad.
+* change department manager.
 
 ![](https://i.imgur.com/oh5RTsG.png)
 
@@ -102,8 +103,9 @@ Demo Link： [https://simple-erp.website](https://simple-erp.website)
 
 ![](https://i.imgur.com/wMHrP7D.png)
 
+### my application
 
-* show uncomplete application document made by user list when user into this page
+* When user into this page, it will show uncomplete application document list applicated by user
 
 ![](https://i.imgur.com/eifLmH7.png)
 
@@ -196,3 +198,7 @@ Demo Link： [https://simple-erp.website](https://simple-erp.website)
 ### data visualization for sale order
 
 ![](https://i.imgur.com/G3nLCn8.png)
+
+
+
+###### tags: `README`
