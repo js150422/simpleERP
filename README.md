@@ -54,21 +54,21 @@ test account：
 
 ## Based on
 ### Backend
-Python flask &nbsp;
-RESTful &nbsp;
-Nginx &nbsp;
-Docker &nbsp;
-MySQL &nbsp;
-AWS EC2 &nbsp;
-AWS S3 &nbsp;
-AWS cloudfront
+* Python flask 
+* RESTful
+* Nginx
+* Docker
+* MySQL
+* AWS EC2
+* AWS S3
+* AWS cloudfront
 
 
 ### Frontend
-HTML5 &nbsp;
-CSS3 &nbsp;
-javascript &nbsp;
-chart.js &nbsp;
+* HTML5
+* CSS3
+* javascript
+* chart.js
 
 ## Backend Architecture
 
