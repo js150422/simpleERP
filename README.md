@@ -1,21 +1,23 @@
-# simpleERP
+# Simple ERP
 
 Enterprise resource planning (ERP) refers to a type of software that organizations use to manage day-to-day business activities such as accounting, procurement, project management, risk management and compliance, and supply chain operations. 
 
 ERP systems tie together a multitude of business processes and enable the flow of data between them. By collecting an organization’s shared transactional data from multiple sources, ERP systems eliminate data duplication and provide data integrity with a single source of truth.
 
 &emsp;
-## simpleERP?
+## Simple ERP?
 
-simpleERP is project refer to ERP and merchandising-sector companies.
+"Simple ERP" is a website that references ERP architecture. 
+
+To help companies record business processes and stage authorization.
+
+Data visualization can help the business owner to easily monitor the company's performance.
 
 * create document
-* stages of document review
-* review attention
-* upload sign picture
-* User Interface management by work department
-* sign flow made by user grade
-* simplify sign flow when payment Term meet the conditions
+* stage authorization
+* pending file notification
+* upload Signature picture
+* User Interface management by department
 * data visualization
 
 
@@ -24,10 +26,10 @@ simpleERP is project refer to ERP and merchandising-sector companies.
 Demo Link： [https://simple-erp.website](https://simple-erp.website)
 * test account：(recommend Use)
 
-    * can try sign document
-    * search history document
+    * experience document signning
+    * searching history document
 
-| grade |   department    | account   | password   |
+| job grade |   department    | account   | password   |
 |:-------- |:---------:| ------ | ------ |
 | Boss     |   admin   | cccc   | 123456 |
 
@@ -38,7 +40,7 @@ Demo Link： [https://simple-erp.website](https://simple-erp.website)
 * other test account
 
 
-| grade |   department    | account   | password   |
+|  job grade |   department    | account   | password   |
 |:-------- |:---------:| ------ | ------ |
 | staff    |   sale    | aaaa   | 123456 |
 | manager  |   sale    | pppp   | 123456 |
@@ -79,17 +81,17 @@ Demo Link： [https://simple-erp.website](https://simple-erp.website)
 
 ## Features
 
-### sign up
+### Register
 
-* sign up : when user success sign up, he need made remind system administrator to change grade and department to use more function on simpleERP.
+* Register : When user register successful, he/she needs to remind system administrator to change job grade and department and then he/she can use the corresponding rank and department functions.
 
 ![](https://i.imgur.com/RsHcXn9.png)
 
 
-### set department and grad Page
+### Set department and job grad
 
-* only system administrator can use this page.
-* change user department and grad.
+* only system administrator can modify this page.
+* change user department and job grade.
 * change department manager.
 
 ![](https://i.imgur.com/oh5RTsG.png)
@@ -97,79 +99,80 @@ Demo Link： [https://simple-erp.website](https://simple-erp.website)
 ![](https://i.imgur.com/21zFiVe.gif)
 
 
-### userPage
+### User Page
 
-* upload head picture and sign picture
+* upload head picture and Signature picture
 
 ![](https://i.imgur.com/wMHrP7D.png)
 
-### my application
+### My application
 
-* When user into this page, it will show uncomplete application document list applicated by user
+* Display uncomplete application document list applicated by user
 
 ![](https://i.imgur.com/eifLmH7.png)
 
 
-### create document(ex:create a new client information document)
+### Create document
+### Ex: Create a new client information document
 
-* get application id after success create document
+* When document create successful will produce application ID
 
 ![](https://i.imgur.com/MMlPzbo.png)
 
 ![](https://i.imgur.com/hdQluKm.gif)
 
 
-### review document
+### Stage authorization
 
-* When user inter simpleERP ,he will see review document quantity show on upper right corner.
+* When user sign into "Simple ERP", will see pending file notification show on upper right corner.
 
 ![](https://i.imgur.com/CgnJrvF.png)
 
-* create sign comment
+* insert comment
 
 ![](https://i.imgur.com/Kf84br8.png)
 
-* reject buttom go back last step.
-* approve buttom go to next step.
+* Reject Buttom go back last stage.
+* Approve Buttom go to next stage.
 
 ![](https://i.imgur.com/stFHIee.png)
 
 ![](https://i.imgur.com/8lLyq1W.gif)
 
 
-### create producet data
+### Create producet information document
 
-* onload product picture
+* upload product picture
 
 ![](https://i.imgur.com/m9ZXXi7.png)
 
-
-* When product data success, user will get application Id.
+* System will automatic culculate the suggestion price.
+* When document create successful will produce application ID.
 
 ![](https://i.imgur.com/y94c5ZB.png)
 
 
-### special price set 
+### Special price set 
 
-* provid special price to client 
+* Provid special price to client 
 
 ![](https://i.imgur.com/3YCt2if.png)
 
 
 
-* When create a sale order, if the client has a special price, it will be displayed in the sales price column, if not, it will be the suggested price.
+* If the client needs a special price, here could set special price.
 
 ![](https://i.imgur.com/quNr5Df.png)
 
 
-### sale order create
+### Sale order document create
 
 ![](https://i.imgur.com/uQD05L7.png)
 
 ![](https://i.imgur.com/i3b0YxN.gif)
 
 
-### when sale order sign flow complete, application person can create a delivery bill by use turn buttom. 
+### When sale order document authorization stage complete, application can use the buttom at right under corner to create a delivery bill. 
 
 ![](https://i.imgur.com/yHhjysE.png)
 
@@ -177,13 +180,13 @@ Demo Link： [https://simple-erp.website](https://simple-erp.website)
 
 
 
-### delivery bill sign
+### Delivery bill stage authorization
 
-* picker can enter quantity adjustment and adjentment reason.
+* If quantity need to revise, picker could enter quantity adjustment and reason.
 
 ![](https://i.imgur.com/k1YO49z.png)
 
-### product arrival update arrival date on delivery bill
+### If product arrive, delivery bill will update the arrival date 
 
 ![](https://i.imgur.com/uUK9CC3.png)
 
