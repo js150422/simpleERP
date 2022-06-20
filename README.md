@@ -53,7 +53,7 @@ Demo Link： [https://simple-erp.website](https://simple-erp.website)
 
 
 ## Based on
-### Backend
+### Back-End
 * Python flask 
 * RESTful
 * Nginx
@@ -64,10 +64,10 @@ Demo Link： [https://simple-erp.website](https://simple-erp.website)
 * AWS cloudfront
 
 
-### Frontend
+### Front-End
 * HTML5
 * CSS3
-* javascript
+* JavaScript
 * chart.js
 
 ## Backend Architecture
@@ -90,9 +90,9 @@ Demo Link： [https://simple-erp.website](https://simple-erp.website)
 
 ### Set department and job grad
 
-* only system administrator can modify this page.
-* change user department and job grade.
-* change department manager.
+* Only system administrator can modify this page.
+* Change user department and job grade.
+* Change department manager.
 
 ![](https://i.imgur.com/oh5RTsG.png)
 
@@ -128,7 +128,7 @@ Demo Link： [https://simple-erp.website](https://simple-erp.website)
 
 ![](https://i.imgur.com/CgnJrvF.png)
 
-* insert comment
+* Insert comment
 
 ![](https://i.imgur.com/Kf84br8.png)
 
@@ -142,7 +142,7 @@ Demo Link： [https://simple-erp.website](https://simple-erp.website)
 
 ### Create producet information document
 
-* upload product picture
+* Upload product picture
 
 ![](https://i.imgur.com/m9ZXXi7.png)
 
